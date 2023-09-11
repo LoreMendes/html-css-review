@@ -16,7 +16,9 @@ html {
 
 header {
     background-color: black;
-    color:#fff
+    color:#fff;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: .875rem;
 }
 
 .head {
@@ -28,7 +30,7 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "banner";
-    color: #000000;
+    color: #ffffff;
     font-size: 1.5rem;
     background-color: black;
   }
@@ -50,18 +52,15 @@ header {
   .banner h2,
   .banner p {
     margin: 0 0 1.5rem;
+    color: #ffffff;
   }
   
-  .banner a {
-    display: inline-block;
-    background-color: transparent;
-    padding: .5em 1.5em .6em;
-    border: .3rem solid #bea59b;
-    border-radius: 1em;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
+  .banner h3 {
+    background-color: blueviolet;
   }
+
+
+
   .footer {
     background-color: black;
     color: #fff;
