@@ -1,74 +1,15 @@
-html {
+/* asterisco serve para uma caracteristica que se aplica a todo o index html */
+ * {
     box-sizing: border-box;
-    background-color: #fff;
-    font-family: "Nunito", sans-serif;
   }
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    margin: 0;
-  }
-
-header {
-    background-color: black;
-    color:#fff;
-    font-family: "Wix Madefor Display", sans-serif;
-    font-size: .875rem;
+body {
+  font-family: 'Nunito', sans-serif;
+  /* color: white; */
+  line-height: 1.5;
 }
 
-.head {
-    font-family: "Wix Madefor Display", sans-serif;
+.wrapper {
+  max-width: 1200px;
 }
-
-.banner {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "banner";
-    color: #ffffff;
-    font-size: 1.5rem;
-    background-color: black;
-  }
   
-  .banner img {
-    grid-area: banner;
-    width: 100%;
-  }
-  
-  .banner section {
-    grid-area: banner;
-    align-self: center;
-    justify-self: center;
-    padding: 2rem 0;
-    max-width: 20em;
-    text-align: center;
-  }
-  
-  .banner h2,
-  .banner p {
-    margin: 0 0 1.5rem;
-    color: #ffffff;
-  }
-  
-  .banner h3 {
-    background-color: blueviolet;
-  }
-
-
-
-  .footer {
-    background-color: black;
-    color: #fff;
-    font-size: .875rem;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .footer * {
-    margin: 0;
-  }
