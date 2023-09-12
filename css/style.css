@@ -11,5 +11,9 @@ body {
 
 .wrapper {
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
 }
   
+/* wrapper eh para por o conteudo em um container. max widht nao deixa a pagina ficar maior que 1200px (tamanho standard). margin 0 eh em cima e em baixo. auto eh dos lados)
+em and rem sao medidas de tamanho. 16px by default. 1rem = eh p tamanho de fonte. 1em = sao para padding */
