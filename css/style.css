@@ -7,6 +7,7 @@ body {
   font-family: 'Nunito', sans-serif;
   /* color: white; */
   line-height: 1.5;
+  margin: 0;
 }
 
 .wrapper {
@@ -17,3 +18,46 @@ body {
   
 /* wrapper eh para por o conteudo em um container. max widht nao deixa a pagina ficar maior que 1200px (tamanho standard). margin 0 eh em cima e em baixo. auto eh dos lados)
 em and rem sao medidas de tamanho. 16px by default. 1rem = eh p tamanho de fonte. 1em = sao para padding */
+
+#company-name {
+  color: #dec9e9;
+  font-size: 1.5rem;
+}
+
+#intro,
+#fan-fav,
+#team {
+  padding: 4em 0;
+}
+
+#header {
+  background-color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: #dec9e9
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: white;
+}
+
+#hero-banner {
+  height: 60vh;
+  background-color: #7251B5;
+  background-image: url(../images/ice-cream-cones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* flexblox serve para usar content em uma linha unica - straight line. ex. cabecalho grid serve para rows e collumns ao mesmo tempo. ex. galeria*/
