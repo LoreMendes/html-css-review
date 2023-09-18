@@ -5,7 +5,7 @@
   
 body {
   font-family: 'Nunito', sans-serif;
-  /* color: white; */
+  color: white;
   line-height: 1.5;
   margin: 0;
 }
@@ -16,7 +16,8 @@ body {
   padding: 0 2em;
 }
   
-/* wrapper eh para por o conteudo em um container. max widht nao deixa a pagina ficar maior que 1200px (tamanho standard). margin 0 eh em cima e em baixo. auto eh dos lados)
+/* wrapper eh para por o conteudo em um container. max widht nao deixa a pagina ficar maior que 1200px (tamanho standard). 
+margin 0 eh em cima e em baixo. auto eh dos lados)
 em and rem sao medidas de tamanho. 16px by default. 1rem = eh p tamanho de fonte. 1em = sao para padding */
 
 #company-name {
@@ -34,9 +35,20 @@ em and rem sao medidas de tamanho. 16px by default. 1rem = eh p tamanho de fonte
   background-color: black;
 }
 
+#header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav ul {
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+}
+
+nav ul li {
+  padding-left: 1.125em;
 }
 
 nav ul li a:link,
@@ -56,8 +68,52 @@ nav ul li a:focus {
   background-image: url(../images/ice-cream-cones.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  display: flex;
+  align-items: center;
 }
 
+/* flexblox serve para usar content em uma linha unica - straight line. ex. cabecalho 
+grid serve para rows e collumns ao mesmo tempo. ex. galeria*/
 
-/* flexblox serve para usar content em uma linha unica - straight line. ex. cabecalho grid serve para rows e collumns ao mesmo tempo. ex. galeria*/
+#intro {
+  background-color: #7251B5;
+}
+
+#intro p {
+  max-width: 50%;
+}
+
+#fan-fav {
+  background-color: black;
+  color: #dec9e9;
+}
+
+#fan-fav ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fan-fav li {
+  width: 50%;
+  padding-right: 15%;
+}
+
+#team {
+  background-color: #7251B5;
+}
+
+#team h2,
+#team .team-intro {
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
